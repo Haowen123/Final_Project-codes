@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0e0"
+    tools:context="instantmessaging.android.myapplication.ChatActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:ignore="UselessParent"
+        android:id="@+id/rl_layout"
+        android:background="@color/titleBackground"
+        >
+        <ImageButton
+            android:id="@+id/BacktoHomePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/titleBackground"
+            android:src="@drawable/left_blue"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/returnloginactivity" />
+        <ImageButton
+            android:id="@+id/Me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/titleBackground"
+            android:src="@drawable/ic_person"
+            android:contentDescription="@string/MyInformation"
+            tools:ignore="RtlHardcoded"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Frind"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/titleFontSize"
+            android:id="@+id/Chat_username"
+            tools:ignore="RelativeOverlap"
+
+            />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleheight"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightgray">
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="36dp"
+            android:id="@+id/btn_send"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:text="@string/send"
+            android:background="@color/button"
+            android:textColor="@color/titleBackground"
+            tools:ignore="RtlHardcoded" />
+        <EditText
+            android:id="@+id/et_sendmessage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/btn_send"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/titleBackground"
+            android:textSize="@dimen/titleFontSize"
+            tools:ignore="RtlHardcoded"
+            android:inputType="text" />
+        </RelativeLayout>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_below="@id/rl_layout"
+        android:layout_above="@id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:scrollbars="none"
+        android:cacheColorHint="#00000000" />
+
+</RelativeLayout>

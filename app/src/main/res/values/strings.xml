@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="button">Button</string>
+    <string name="password">Password</string>
+    <string name="register_name">Username</string>
+    <string name="Register">Register</string>
+    <string name="Login">Sign In</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="search">Search</string>
+    <string name="friend">friendID@servername</string>
+    <string name="cancel">cancel</string>
+    <string name="addfriend">Add Friend</string>
+    <string name="returnloginactivity">returntoHomepage</string>
+    <string name="MyInformation">conversation</string>
+    <string name="Frind">userId</string>
+    <string name="userhead">Userhead</string>
+    <string name="send">Send</string>
+    <string name="userhand">head</string>
+    <string name="back_to_register">back to Register</string>
+    <string name="my_friends">My Friends</string>
+    <string name="unexpanded">unExpanded</string>
+    <string name="username">username</string>
+    <string name="turntoaddfriend">turntoaddFriend</string>
+    <string name="Friend_list">MY FRIENDS</string>
+</resources>

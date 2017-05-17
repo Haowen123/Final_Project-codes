@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/userItem">
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/jinx"
+        android:id="@+id/avater"
+        android:contentDescription="@string/userhead" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:maxLines="1" />
+        <TextView
+            android:id="@+id/last_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/lightgray"
+            android:textSize="14sp"
+            android:maxLines="1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightgray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/unread_num"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:minWidth="16dp"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/titleBackground"
+            android:textSize="11sp"
+            android:visibility="invisible"
+            tools:ignore="SmallSp" />
+    </LinearLayout>
+
+</LinearLayout>
